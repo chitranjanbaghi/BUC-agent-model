@@ -10,16 +10,12 @@
 </head>
 <body>
     <center>
-        <h3>Total supply => <span id="tSup"></span></h3>
+        <h3>hello world, welocome to BUC</h3>
     </center>
 </body>
 
     <script>
-        const web3 = new Web3("HTTP://127.0.0.1:7545");
-        const init = async () => {
-            const Contract = new web3.eth.Contract(scAbi, "0x8e1875639E7Ee71078F11D73Cc95B61917710EBE");
-            document.getElementById('tSup').innerHTML = parseFloat(await Contract.methods.totalSupply().call())/Math.pow(10,18)
-        }
+        
 
         init()
     </script>
